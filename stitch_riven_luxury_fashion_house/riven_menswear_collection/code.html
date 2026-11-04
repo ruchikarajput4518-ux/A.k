@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RIVEN | Menswear</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;500;600;700&amp;family=Hanken+Grotesk:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "secondary-container": "#604403",
+                        "secondary": "#e9c176",
+                        "on-primary-fixed-variant": "#474747",
+                        "on-background": "#e2e2e2",
+                        "on-primary": "#303030",
+                        "surface-container-highest": "#333535",
+                        "on-secondary": "#412d00",
+                        "secondary-fixed": "#ffdea5",
+                        "surface-container": "#1e2020",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "error-container": "#93000a",
+                        "on-surface": "#e2e2e2",
+                        "inverse-primary": "#5e5e5e",
+                        "on-primary-fixed": "#1b1b1b",
+                        "on-error-container": "#ffdad6",
+                        "surface-dim": "#121414",
+                        "on-secondary-container": "#dab36a",
+                        "surface-container-lowest": "#0c0f0f",
+                        "tertiary": "#c8c6c5",
+                        "outline": "#988e90",
+                        "primary-container": "#000000",
+                        "inverse-surface": "#e2e2e2",
+                        "secondary-fixed-dim": "#e9c176",
+                        "on-error": "#690005",
+                        "surface-bright": "#37393a",
+                        "primary-fixed": "#e2e2e2",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "tertiary-container": "#000000",
+                        "on-surface-variant": "#cfc4c5",
+                        "on-tertiary": "#313030",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "surface-container-low": "#1a1c1c",
+                        "on-secondary-fixed": "#261900",
+                        "tertiary-fixed": "#e5e2e1",
+                        "outline-variant": "#4c4546",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "primary": "#c6c6c6",
+                        "on-tertiary-container": "#767575",
+                        "on-primary-container": "#757575",
+                        "surface-container-high": "#282a2b",
+                        "background": "#121414",
+                        "surface-variant": "#333535",
+                        "inverse-on-surface": "#2f3131",
+                        "surface-tint": "#c6c6c6",
+                        "error": "#ffb4ab",
+                        "surface": "#121414"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "24px",
+                        "stack-lg": "64px",
+                        "stack-xl": "120px",
+                        "stack-md": "32px",
+                        "margin-desktop": "80px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Bodoni Moda"],
+                        "display-lg": ["Bodoni Moda"],
+                        "label-caps": ["Hanken Grotesk"],
+                        "headline-lg": ["Bodoni Moda"],
+                        "headline-lg-mobile": ["Bodoni Moda"],
+                        "body-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "500" }],
+                        "display-lg": ["80px", { "lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.2em", "fontWeight": "600" }],
+                        "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "0", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: theme('colors.background'); color: theme('colors.on-background'); }
+        .ghost-border { border: 1px solid rgba(255, 255, 255, 0.15); }
+    </style>
+</head>
+<body class="antialiased selection:bg-secondary selection:text-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 dark:bg-surface/90 backdrop-blur-xl border-b border-white/10 ease-in-out duration-300">
+<div class="flex justify-between items-center px-margin-desktop py-6 w-full max-w-[1440px] mx-auto">
+<div class="hidden md:flex gap-8">
+<a class="font-label-caps text-label-caps text-on-surface dark:text-on-surface hover:text-secondary transition-colors hover:opacity-70 transition-opacity duration-500" href="#">Gowns</a>
+<a class="font-label-caps text-label-caps text-secondary dark:text-secondary border-b border-secondary pb-1 hover:opacity-70 transition-opacity duration-500" href="#">Menswear</a>
+<a class="font-label-caps text-label-caps text-on-surface dark:text-on-surface hover:text-secondary transition-colors hover:opacity-70 transition-opacity duration-500" href="#">Accessories</a>
+</div>
+<a class="font-display-lg text-headline-md tracking-tighter text-on-surface dark:text-on-surface" href="#">RIVEN</a>
+<div class="flex items-center gap-6">
+<button class="text-on-surface hover:text-secondary transition-colors duration-300">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">shopping_bag</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-[100px] max-w-[1440px] mx-auto">
+<!-- Editorial Hero -->
+<section class="px-margin-mobile md:px-margin-desktop py-stack-lg md:py-stack-xl flex flex-col md:flex-row items-center gap-gutter">
+<div class="w-full md:w-1/2 flex flex-col items-start justify-center gap-6 z-10 md:pr-12">
+<h1 class="font-display-lg text-display-lg text-on-surface leading-tight">THE ART OF TAILORING</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">Precision meets poetry. A masterclass in structured elegance, crafted for the modern gentleman who demands uncompromising quality and silhouette.</p>
+<a class="mt-4 font-label-caps text-label-caps text-primary-container bg-on-surface px-8 py-4 uppercase tracking-widest hover:bg-secondary hover:text-secondary-container transition-colors duration-500" href="#collection">Explore Collection</a>
+</div>
+<div class="w-full md:w-1/2 mt-12 md:mt-0 relative aspect-[3/4]">
+<img alt="Luxury bespoke suit" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VTlI6QQ39FiYfmZeHMNtLXJEVvF3Solhx_Nw-R_PtSd2cuzY87zELUSzEMT1X-LY9bqAENCtPGm5DJojI93eDjHe2Pf_YtUMtPKenPnDpZzRiZkVZTinNUgNsFaFRrZf1TvviHIUJXblR8CaaTzJ4ttahpr-jpR_g0yRc0mZaLcVFfsKtRLkodJ03-CNxvSLocZ6oKogPZ3CUlQlVxjHGI7mQqcxTP7dmedMq33JEoAiZvWEny9g0urLA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-50"></div>
+</div>
+</section>
+<!-- Filter/Category Bar -->
+<section class="px-margin-mobile md:px-margin-desktop py-8 border-t border-b border-surface-variant/30 flex flex-wrap justify-center gap-8 md:gap-12 sticky top-[88px] z-40 bg-background/80 backdrop-blur-md" id="collection">
+<button class="font-label-caps text-label-caps text-secondary border-b border-secondary pb-1">ALL</button>
+<button class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors">SUITS</button>
+<button class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors">OUTERWEAR</button>
+<button class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors">SHIRTS</button>
+<button class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors">KNITWEAR</button>
+</section>
+<!-- Product Grid -->
+<section class="px-margin-mobile md:px-margin-desktop py-stack-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-gutter gap-y-stack-lg">
+<!-- Product 1 -->
+<a class="group block relative" href="#">
+<div class="relative aspect-[3/4] mb-6 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 opacity-90 group-hover:opacity-100" data-alt="A male model wearing a dark charcoal bespoke suit, tailored fit, standing against a minimalist concrete wall. Soft cinematic lighting highlighting the texture of the wool. High-contrast editorial style fashion photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy6Q_CCvWMdVpZkce-LRg4n21jfnfXPkwrhygkg6cvlu_NN0DfKSu5QCF-zxZV0hYoa1xVNMP3r_T8HMWmEGfCR6tzvUV76t0wPOFOLULGIaDczw3tQJEj_CVK9w5y1UPVD5K6T6OQSAxlW9HjctP__cAtGa3Ojlyc85gdvYf_ho63l28hv9WOGFVwX4zxFL_rdRG-qJ8La65H_iwodBPcR1sObVsaJ0L-5j2cxqvW0irpUTDbl6um"/>
+</div>
+<div class="flex justify-between items-baseline">
+<h3 class="font-label-caps text-label-caps text-on-surface uppercase tracking-widest">Charcoal Wool Suit</h3>
+<span class="font-body-md text-body-md text-on-surface-variant">$2,450</span>
+</div>
+</a>
+<!-- Product 2 -->
+<a class="group block relative md:mt-24" href="#">
+<div class="relative aspect-[3/4] mb-6 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 opacity-90 group-hover:opacity-100" data-alt="A close-up shot of a man wearing a luxurious cashmere overcoat in deep navy. Focus on the collar and shoulder construction. Cinematic lighting, dark moody background, high-end fashion editorial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlkEOWD4n00Gcv1KoNZjRQdLy71ZVhMgT7vChRPZfWKnf2oreFfiudl9EnydYET2LVrbJEHfkoRxR_34PDuKW3NQfiSrVxywfNSoRcRVr94zOggD-4JS6KV5hfvaQWl-qYHG9CNRLaj2-Lb3-s3tweG-4ZGtrq6Zj7plGEt1JJkXURLsKcIc6_KUm1WxwtS7ST_VMCSFxLsSL-M3VRdfv1yjOb0FgtPVo_NQnLDDiL7HQL-NEwLcbq"/>
+</div>
+<div class="flex justify-between items-baseline">
+<h3 class="font-label-caps text-label-caps text-on-surface uppercase tracking-widest">Cashmere Overcoat</h3>
+<span class="font-body-md text-body-md text-on-surface-variant">$3,100</span>
+</div>
+</a>
+<!-- Product 3 -->
+<a class="group block relative" href="#">
+<div class="relative aspect-[3/4] mb-6 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 opacity-90 group-hover:opacity-100" data-alt="A man in a crisp white tailored dress shirt with a subtle herringbone pattern, unbuttoned slightly at the collar. Monochromatic dark background, emphasizing the pristine white fabric and sharp tailoring. Cinematic luxury photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAU3f1TOhE0-vzYtq7OPjkeoIsSg93N_OaT89UGNT2nD2-Q-poJIupGSwGCHH9oTA45bn80iK-YObBwzuQZfa8fAzGWA6y-hKVrryCmSinvRHzeuVwXRA-VSxju1qnuWOQQ59uJXT_lXcM7n7P_fMhfzZj1asSNMgbZ1YGefHaT5VmIf0jjSOnLCnVO4p2E-FLPhaglUA0igadtAwBpeMPzSHPmZ1htbSs8QJk9ET6MVbBkVe2p-ek"/>
+</div>
+<div class="flex justify-between items-baseline">
+<h3 class="font-label-caps text-label-caps text-on-surface uppercase tracking-widest">Herringbone Dress Shirt</h3>
+<span class="font-body-md text-body-md text-on-surface-variant">$480</span>
+</div>
+</a>
+</div>
+</section>
+<!-- Brand Story Section -->
+<section class="py-stack-xl border-t border-surface-variant/30 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest relative overflow-hidden">
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-5 md:col-start-2 flex flex-col gap-8">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface leading-tight">HERITAGE <br/>IN EVERY STITCH</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">We source only the finest Italian wools and cashmere, combining traditional bespoke construction methods with a modern, architectural silhouette. Every garment is a testament to the quiet power of exceptional craftsmanship.</p>
+</div>
+<div class="md:col-span-5 mt-12 md:mt-0 aspect-square ghost-border p-4 relative">
+<img class="w-full h-full object-cover filter grayscale contrast-125" data-alt="A highly detailed close-up shot of a tailor's hands working on a dark suit jacket lapel with a needle and thread. Dark moody atmosphere, dramatic side lighting emphasizing the texture of the fabric and the precision of the work. Cinematic macro photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9LMPFY0HKYwzbjc4NDI7lh8KxN6RvDAoqNY23Z86qpraSznhgSjTQRDQcTkxtxtUuQpFyoZMz-unuI2azhqioeCYMRDPLZNAYe_bncxL-KzfbL08dx-HNiDvoK1kVGo1BhjmHb5Q9E-y1j0TP3pJB5RJHHdnbMXVLC56CuNaNy4ken8XJmvWrcTpCB_bdu8DTETeWwG7FgwTpAe6uhXnoeAe8uPTr59YczRDmjBUBxNLHi1o36cif"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-xl px-margin-desktop bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-surface-variant grid grid-cols-12 gap-gutter transition-all duration-500 ease-out">
+<div class="col-span-12 md:col-span-4 flex flex-col justify-between">
+<span class="font-display-lg text-headline-lg text-on-surface dark:text-on-surface block mb-8">RIVEN</span>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 RIVEN. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="col-span-12 md:col-span-8 flex flex-wrap md:justify-end gap-12 pt-4">
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Shipping &amp; Returns</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Contact Us</a>
+</div>
+</div>
+</footer>
+</body></html>

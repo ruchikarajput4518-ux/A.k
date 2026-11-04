@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RIVEN - The Noir Collection</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-variant": "#333535",
+                      "surface-bright": "#37393a",
+                      "tertiary-fixed": "#e5e2e1",
+                      "tertiary": "#c8c6c5",
+                      "surface-tint": "#c6c6c6",
+                      "on-secondary-fixed": "#261900",
+                      "on-surface": "#e2e2e2",
+                      "on-error-container": "#ffdad6",
+                      "on-tertiary-fixed-variant": "#474746",
+                      "on-secondary-fixed-variant": "#5d4201",
+                      "outline": "#988e90",
+                      "on-secondary": "#412d00",
+                      "on-tertiary": "#313030",
+                      "on-background": "#e2e2e2",
+                      "surface-dim": "#121414",
+                      "outline-variant": "#4c4546",
+                      "on-primary-container": "#757575",
+                      "primary-container": "#000000",
+                      "secondary-fixed-dim": "#e9c176",
+                      "surface": "#121414",
+                      "surface-container-lowest": "#0c0f0f",
+                      "on-secondary-container": "#dab36a",
+                      "inverse-surface": "#e2e2e2",
+                      "primary-fixed": "#e2e2e2",
+                      "secondary": "#e9c176",
+                      "tertiary-container": "#000000",
+                      "surface-container-high": "#282a2b",
+                      "on-primary": "#303030",
+                      "tertiary-fixed-dim": "#c8c6c5",
+                      "on-primary-fixed-variant": "#474747",
+                      "secondary-container": "#604403",
+                      "surface-container": "#1e2020",
+                      "error-container": "#93000a",
+                      "secondary-fixed": "#ffdea5",
+                      "on-error": "#690005",
+                      "inverse-primary": "#5e5e5e",
+                      "error": "#ffb4ab",
+                      "primary-fixed-dim": "#c6c6c6",
+                      "surface-container-low": "#1a1c1c",
+                      "on-primary-fixed": "#1b1b1b",
+                      "on-surface-variant": "#cfc4c5",
+                      "surface-container-highest": "#333535",
+                      "on-tertiary-container": "#767575",
+                      "background": "#121414",
+                      "on-tertiary-fixed": "#1c1b1b",
+                      "primary": "#c6c6c6",
+                      "inverse-on-surface": "#2f3131"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-desktop": "80px",
+                      "stack-md": "32px",
+                      "stack-xl": "120px",
+                      "margin-mobile": "24px",
+                      "stack-lg": "64px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "headline-md": [
+                              "Bodoni Moda"
+                      ],
+                      "headline-lg": [
+                              "Bodoni Moda"
+                      ],
+                      "display-lg": [
+                              "Bodoni Moda"
+                      ],
+                      "body-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-lg-mobile": [
+                              "Bodoni Moda"
+                      ],
+                      "label-caps": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-md": [
+                              "Hanken Grotesk"
+                      ]
+              },
+              "fontSize": {
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "80px",
+                              {
+                                      "lineHeight": "90px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "0",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.2em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .text-shadow-subtle {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen flex flex-col selection:bg-secondary selection:text-on-secondary antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 dark:bg-surface/90 backdrop-blur-xl border-b border-white/10 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 transition-all duration-300 ease-in-out">
+<div class="flex items-center gap-8">
+<a class="font-display-lg text-headline-md tracking-tighter text-on-surface dark:text-on-surface hover:opacity-70 transition-opacity duration-500" href="#">
+                RIVEN
+            </a>
+<div class="hidden md:flex gap-8 font-label-caps text-label-caps">
+<a class="text-on-surface dark:text-on-surface hover:text-secondary transition-colors duration-300" href="#">Gowns</a>
+<a class="text-on-surface dark:text-on-surface hover:text-secondary transition-colors duration-300" href="#">Menswear</a>
+<a class="text-on-surface dark:text-on-surface hover:text-secondary transition-colors duration-300" href="#">Accessories</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<button aria-label="Search" class="text-on-surface hover:opacity-70 transition-opacity duration-500">
+<span class="material-symbols-outlined text-2xl">search</span>
+</button>
+<button aria-label="Shopping Bag" class="text-on-surface hover:opacity-70 transition-opacity duration-500">
+<span class="material-symbols-outlined text-2xl" data-icon="shopping_bag">shopping_bag</span>
+</button>
+<button aria-label="Menu" class="md:hidden text-on-surface hover:opacity-70 transition-opacity duration-500">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Evening Gown" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBNSIMd15s-GfuDrlC7IBcZdLkGLINckizrOsX0GylHyXDVubkoL1qdzQaed5-DKw3qsqeiDLeMSfGpZ8GXo53S3H9WUS0jbFvrBVTe_Gb6AYoQACeW0-iHWXQMwnZ6AbbT49DqjtD7lt-MXXjrlwu-O69ixjWlpKRjRkjX5oypS7bIV1Y9mZWLxdkhrAEPGgsiXFMGOgSGJiqQfpC8lYVoYIg8dGHgRhOciO6CppZMYvt9a91oYQ-"/>
+<div class="absolute inset-0 bg-black/40"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90"></div>
+</div>
+<div class="relative z-10 flex flex-col items-center text-center px-margin-mobile md:px-margin-desktop mt-20">
+<h1 class="font-display-lg text-display-lg text-on-surface mb-6 text-shadow-subtle opacity-0 animate-[fadeIn_2s_ease-out_forwards]">
+                    THE NOIR COLLECTION
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface max-w-2xl mb-10 opacity-0 animate-[fadeIn_2s_ease-out_0.5s_forwards]">
+                    Uncompromising luxury. Timeless silhouettes rendered in the deepest shades of midnight.
+                </p>
+<a class="inline-flex items-center justify-center px-8 py-4 bg-on-surface text-surface font-label-caps text-label-caps hover:bg-surface hover:text-on-surface hover:border-on-surface border border-transparent transition-all duration-500 opacity-0 animate-[fadeIn_2s_ease-out_1s_forwards]" href="#collection">
+                    EXPLORE COLLECTION
+                </a>
+</div>
+</section>
+<!-- Statement Section -->
+<section class="py-stack-xl px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto text-center">
+<div class="max-w-4xl mx-auto">
+<span class="font-label-caps text-label-caps text-secondary mb-6 block tracking-widest">BESPOKE CRAFTSMANSHIP</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-8">
+                    Silence Over Noise. Quality Over Quantity.
+                </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    Every piece in the RIVEN atelier is a testament to deliberate design and meticulous execution. We curate an aesthetic of high-contrast minimalism, where vast negative space frames garments of unparalleled construction.
+                </p>
+</div>
+</section>
+<!-- Collection Grid -->
+<section class="pb-stack-xl px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto" id="collection">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Menswear (Large Span) -->
+<a class="group md:col-span-8 relative overflow-hidden block aspect-[4/5] md:aspect-[16/9]" href="#">
+<img alt="Menswear Suit" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbahOi1Nb4neFMF6sX5x6bgXvDZEXJ7Hy9PANhHiJwm1ht1NItbhfk4tu7-E_uAlE9chlae2R-tE30EWiIxf9IBXKEzWNOFBFo_gnuh859CrNuhlx7FngeK9CTZZDqjbdF6RPiO3UjCMCRHNVGTloGMDkIHcYSfQ8VfZoh90Fea3x25cVybhITaYrNLlStUYdgFfuGxBg85uYtb8_WP5uY8aQsJQI4FQg910T-0OqPkuOq0dQqQs0w"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-black/80 to-transparent">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Tailoring</h3>
+<span class="font-label-caps text-label-caps text-on-surface flex items-center gap-2 group-hover:text-secondary transition-colors duration-300">
+                            DISCOVER <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</div>
+</a>
+<div class="md:col-span-4 flex flex-col gap-gutter">
+<!-- Accessories (Square) -->
+<a class="group relative overflow-hidden block aspect-square flex-1" href="#">
+<img alt="Luxury Watch and Sunglasses" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE-VeJ8vsVMPZaoTLIUxAzm2bpacXe1CO0hbTFkmlloM5clT1WBfPinzW3Wku3wraqRr-OEYcXmsHf4hQwf0sN_MU3Q8pi3-6Rj975ib6-woxwD4rlAks3-AjPo_nSzDgEoaLRqCuJ54VZ45ZxCbGPR3YgigvM-g8fAamXUoiA2GQ3vqUlxHB0p4PTb_hYf6cL88s-PLeah_Re8oraMTs9OGaQI6Un05zOHcIJXTDGV0Pptj9pwcRF"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-black/80 to-transparent">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Accessories</h3>
+<span class="font-label-caps text-label-caps text-on-surface flex items-center gap-2 group-hover:text-secondary transition-colors duration-300">
+                                DISCOVER <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</div>
+</a>
+<!-- Leather Goods (Square) -->
+<a class="group relative overflow-hidden block aspect-square flex-1" href="#">
+<img alt="Leather Bag and Heels" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTMUnzBYj9CSB52yqVXmhiids2vi84bu7kpg_vl4vzlRsa6VtVLbGINz9F9bYHpX3mzvL2iekSLOqg5QzhaV18aGR7377mLCYg-gP1FYRS0_G86JiADwrCIEqlfEvALF1uQtkj3IEoqBAJdNehkf-LeEuhtQyxFpieGfmPZaFBkMgvpgUr1amvBNm93_j_PzLdNPnQNujuLu-ALSWUUxS_UpfTNKamDiS9La-X0ZQDfBerWWzqJXTw"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-500"></div>
+<div class="absolute bottom-0 left-0 p-8 w-full bg-gradient-to-t from-black/80 to-transparent">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Leather Goods</h3>
+<span class="font-label-caps text-label-caps text-on-surface flex items-center gap-2 group-hover:text-secondary transition-colors duration-300">
+                                DISCOVER <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-stack-xl px-margin-mobile md:px-margin-desktop bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-surface-variant mt-auto">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-4 mb-8 md:mb-0">
+<span class="font-display-lg text-headline-lg text-on-surface dark:text-on-surface block mb-4">RIVEN</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+                    Defining modern luxury through stark contrasts and impeccable silhouettes.
+                </p>
+</div>
+<div class="md:col-span-8 flex flex-col md:flex-row justify-end gap-8 md:gap-16 font-body-md text-body-md">
+<div class="flex flex-col gap-4">
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Shipping &amp; Returns</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">Contact Us</a>
+</div>
+</div>
+<div class="md:col-span-12 mt-16 pt-8 border-t border-surface-variant flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="font-label-caps text-label-caps text-on-surface-variant">© 2024 RIVEN. ALL RIGHTS RESERVED.</span>
+<div class="flex gap-4">
+<a aria-label="Instagram" class="text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+<a aria-label="Twitter" class="text-on-surface-variant hover:text-secondary transition-colors duration-300" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+<script>
+        // Simple script for nav background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body></html>

@@ -1,0 +1,1 @@
+export { LeatherGoodsPage } from './LeatherGoodsPage';

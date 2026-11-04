@@ -1,0 +1,1 @@
+export { MenswearPage } from './MenswearPage';
