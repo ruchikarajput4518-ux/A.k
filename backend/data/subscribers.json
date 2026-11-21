@@ -1,0 +1,16 @@
+[
+  {
+    "id": "SUB-1795234541688",
+    "email": "vip.1795234541683@bourbon.fr",
+    "tier": "Private Salon",
+    "status": "active",
+    "subscribedAt": "2026-11-21T04:15:41.688Z"
+  },
+  {
+    "id": "SUB-1001",
+    "email": "vip.collector@geneva.ch",
+    "subscribedAt": "2026-11-14T04:15:41.508Z",
+    "status": "active",
+    "tier": "Private Salon"
+  }
+]

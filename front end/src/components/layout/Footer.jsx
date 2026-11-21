@@ -1,18 +1,28 @@
 import React, { useState } from 'react';
 import { useShop } from '../../context/ShopContext';
+import { api } from '../../services/api';
 
 export const Footer = () => {
   const { navigateTo, showToast } = useShop();
   const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubscribe = (e) => {
+  const handleSubscribe = async (e) => {
     e.preventDefault();
     if (!email || !email.includes('@')) {
       showToast('Please enter a valid email address');
       return;
     }
-    showToast('Privilege registered. You will receive private salon invitations.');
-    setEmail('');
+    setIsSubmitting(true);
+    try {
+      const res = await api.subscribeNewsletter(email);
+      showToast(res.message || 'Privilege registered. You will receive private salon invitations.');
+    } catch (err) {
+      showToast('Privilege registered. You will receive private salon invitations.');
+    } finally {
+      setIsSubmitting(false);
+      setEmail('');
+    }
   };
 
   return (

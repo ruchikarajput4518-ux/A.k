@@ -1,6 +1,8 @@
-# RIVEN — Luxury Fashion House
+# RIVEN — Luxury Fashion House (Full-Stack)
 
-An haute couture digital atelier and luxury fashion e-commerce experience built with React and Vite.
+An haute couture digital atelier and luxury fashion e-commerce experience featuring a React/Vite frontend and an Express/Node.js backend REST API.
+
+---
 
 ## Overview
 
@@ -12,9 +14,9 @@ RIVEN is a high-end luxury fashion brand interface featuring architectural silho
 - **Menswear Collection**: Bespoke tailored suits, overcoats, and formalwear with category filtering and detailed specifications.
 - **Evening Gowns & Couture**: Architectural gowns, silk drapery, and couture statements.
 - **Accessories & Fine Horology**: Timepieces, leather goods, and fine craftsmanship showcases.
-- **Atelier Experience**: Private styling and bespoke consultation appointment booking modal.
-- **Interactive Shopping Bag & Quick View**: Full cart drawer, instant quick view modals, and seamless checkout workflow.
-- **Global Search**: Search across departments, categories, and luxury items.
+- **Atelier Experience**: Private styling and bespoke consultation appointment booking.
+- **Interactive Shopping Bag & Quick View**: Full cart drawer, instant quick view modals, and seamless concierge checkout.
+- **Backend REST API**: Complete product catalogue, order tracking, appointment management, and VIP newsletter persistence.
 
 ---
 
@@ -22,21 +24,38 @@ RIVEN is a high-end luxury fashion brand interface featuring architectural silho
 
 ```
 .
-├── front end/                     # React + Vite application
-│   ├── public/                    # High-resolution luxury assets
-│   │   └── assets/
+├── backend/                        # Node.js + Express REST API
+│   ├── data/                       # File-backed JSON databases (orders, products, appointments)
 │   ├── src/
-│   │   ├── components/            # UI components (Cart, Layout, Product, Search)
-│   │   ├── context/               # Global state (ShopContext)
-│   │   ├── data/                  # Product catalogue (PRODUCTS)
-│   │   ├── pages/                 # Collection pages (Menswear, Gowns, Accessories, Atelier, Editorial)
-│   │   ├── App.jsx                # Main application entry
-│   │   ├── index.css              # Typography & styling
-│   │   └── main.jsx
-│   ├── index.html
+│   │   ├── controllers/            # Request handlers (products, orders, appointments, inquiries)
+│   │   ├── data/                   # Initial catalogue seeds
+│   │   ├── middleware/             # Validation & error handling
+│   │   ├── routes/                 # Express API routes (/api/*)
+│   │   ├── utils/                  # JSON storage utility
+│   │   └── app.js                  # Express app setup & CORS
+│   ├── test/                       # API integration test suite
+│   ├── .env.example
 │   ├── package.json
-│   └── vite.config.js
-└── stitch_riven_luxury_fashion_house/  # Design system specifications & mockups
+│   ├── README.md
+│   └── server.js                   # Server entry point (port 5000)
+│
+├── front end/                      # React + Vite application (port 3000)
+│   ├── public/assets/              # High-resolution luxury assets
+│   ├── src/
+│   │   ├── components/             # UI components (Cart, Layout, Product, Search)
+│   │   ├── context/                # Global state (ShopContext)
+│   │   ├── data/                   # Product catalogue & fallback data
+│   │   ├── pages/                  # Collection pages (Menswear, Gowns, Accessories, Atelier)
+│   │   ├── services/               # API client service (api.js)
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── package.json
+│   └── vite.config.js              # Configured with proxy to backend (/api -> port 5000)
+│
+├── stitch_riven_luxury_fashion_house/  # Design system specifications & mockups
+├── package.json                    # Root workspace script coordinator
+└── README.md
 ```
 
 ---
@@ -46,29 +65,30 @@ RIVEN is a high-end luxury fashion brand interface featuring architectural silho
 ### Prerequisites
 
 - Node.js (v18+)
-- npm or pnpm
+- npm
 
-### Installation & Run
+### 1. Launch Backend Server
+```bash
+cd backend
+npm install
+npm run dev
+```
+> Server runs on `http://localhost:5000`. Test via `http://localhost:5000/api/health`.
 
-1. Navigate to the frontend directory:
-   ```bash
-   cd "front end"
-   ```
+### 2. Launch Frontend Application
+In a separate terminal:
+```bash
+cd "front end"
+npm install
+npm run dev
+```
+> Frontend runs on `http://localhost:3000` and automatically proxies `/api` calls to port 5000.
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Launch development server:
-   ```bash
-   npm run dev
-   ```
-
-4. Build for production:
-   ```bash
-   npm run build
-   ```
+### 3. Run Backend API Tests
+```bash
+cd backend
+npm test
+```
 
 ---
 

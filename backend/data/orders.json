@@ -1,0 +1,55 @@
+[
+  {
+    "id": "RVN-233054",
+    "clientName": "Duchess of Cambridge",
+    "clientEmail": "private.client@palace.uk",
+    "address": "Kensington",
+    "city": "London",
+    "country": "United Kingdom",
+    "deliveryMethod": "white-glove",
+    "tailoringNotes": "Custom hem length.",
+    "items": [
+      {
+        "productId": "gown-noir-silk-column",
+        "name": "The Noir Silk Column Gown",
+        "size": "FR 38",
+        "price": 4200,
+        "quantity": 1,
+        "subtotal": 4200,
+        "image": "/assets/evening-gown.png"
+      }
+    ],
+    "subtotal": 4200,
+    "shippingFee": 0,
+    "total": 4200,
+    "status": "pending_concierge",
+    "conciergeAssigned": "Henri Beaumont (Senior Maitre d')",
+    "createdAt": "2026-11-21T04:15:41.670Z"
+  },
+  {
+    "id": "RVN-928104",
+    "clientName": "Lord Julian Sterling",
+    "clientEmail": "j.sterling@mayfair.co.uk",
+    "address": "14 Grosvenor Square",
+    "city": "London",
+    "country": "United Kingdom",
+    "deliveryMethod": "white-glove",
+    "tailoringNotes": "Slightly tapered waist; custom cuff length 34.5 in.",
+    "items": [
+      {
+        "productId": "mens-suit-charcoal",
+        "name": "Charcoal Wool Bespoke Suit",
+        "size": "40R",
+        "price": 2450,
+        "quantity": 1,
+        "image": "/assets/menswear-suit.png"
+      }
+    ],
+    "subtotal": 2450,
+    "shippingFee": 0,
+    "total": 2450,
+    "status": "in_atelier",
+    "createdAt": "2026-11-19T04:15:41.504Z",
+    "conciergeAssigned": "Henri Beaumont (Senior Maitre d')"
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "APT-501893",
+    "salon": "Milan - Via Montenapoleone",
+    "service": "Haute Couture Evening Gown Fitting",
+    "clientName": "Contessa Rossi",
+    "clientEmail": "rossi@milano.it",
+    "requestedDate": "2026-11-23",
+    "notes": "Requested private fitting consultation.",
+    "status": "pending_review",
+    "assignedMaitreD": "Alexandre Laurent (Director of Client Services)",
+    "createdAt": "2026-11-21T04:15:41.679Z"
+  },
+  {
+    "id": "APT-501238",
+    "salon": "Paris - Rue du Faubourg Saint-Honoré",
+    "service": "Bespoke Tailoring Commission (Suits & Outerwear)",
+    "clientName": "Eleanor Vance",
+    "clientEmail": "e.vance@private.com",
+    "status": "confirmed",
+    "requestedDate": "2026-11-24",
+    "notes": "Private salon fitting for autumn wardrobe commission.",
+    "createdAt": "2026-11-20T04:15:41.507Z"
+  }
+]
