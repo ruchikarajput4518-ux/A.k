@@ -4,10 +4,14 @@
   "private": true,
   "description": "Full-stack luxury atelier application — React frontend & Express backend",
   "scripts": {
+    "dev": "concurrently -n \"backend,frontend\" -c \"yellow,cyan\" \"npm run dev:backend\" \"npm run dev:frontend\"",
     "dev:backend": "npm --prefix backend run dev",
     "dev:frontend": "npm --prefix \"front end\" run dev",
-    "start": "npm --prefix backend start",
+    "start": "concurrently -n \"backend,frontend\" -c \"yellow,cyan\" \"npm --prefix backend start\" \"npm --prefix \\\"front end\\\" run dev\"",
     "build": "npm --prefix \"front end\" run build",
     "test": "npm --prefix backend test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
   }
 }
